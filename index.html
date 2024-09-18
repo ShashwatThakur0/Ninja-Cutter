@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ninja-Cutter</title>
+</head>
+<body>
+		<!-- partial:index.partial.html -->
+		<!-- Game canvas -->
+		<canvas id="c"></canvas>
+
+		<!-- Gameplay HUD -->
+		<div class="hud">
+			<div class="hud__score">
+				<div class="score-lbl"></div>
+				<div class="cube-count-lbl"></div>
+			</div>
+			<div class="pause-btn"><div></div></div>
+			<div class="slowmo">
+				<div class="slowmo__bar"></div>
+			</div>
+		</div>
+
+		<!-- Player Name Entry Form -->
+		<div id="nameEntryModal" class="modal">
+			<div class="modal-content">
+				<h2>Enter Your Name</h2>
+				<input type="text" id="playerNameInput" placeholder="Your Name">
+				<button id="submitNameBtn">Submit</button>
+			</div>
+		</div>
+		
+
+		<!-- Menu System -->
+
+		<div class="menus">
+			<div class="menu menu--main">
+				<h1>Ninja Cutter</h1>
+				
+				<button type="button" class="play-normal-btn">PLAY</button>
+				<button type="button" class="play-casual-btn">Normal Mode</button>
+				<button type="button" class="high-score-btn" id="highScore">High Score</button>
+				<button type="button" class="about-btn">About</button>
+				<div class="credits">Game By Shashwat Thakur</div>
+			</div>
+			
+			
+			<div class="menu menu--normalMode">
+				<button type="button" class="menu-btn--normalMode">Back to Menu</button>
+			</div>
+			
+			<div class="menu menu--about">
+				<!-- About Menu -->
+				<h1>About Ninja-Cutter</h1>
+				<p>
+					Welcome to thutter. Ninja Cutter is an exciting and fast-paced game where you slice
+					through targets with precision. Challenge yourself in different modes
+					and aim for the highest score!  Your objective: become a master of slicing targets! What better way to do that than play Ninja-cutter, the original hit boxes-slicing game? 
+					<p>Prove to your friends and family that you’re the top ninja around. Show them how much you can cut, or compare your score with your friends to rise through the ranks and reach the top of the leaderboard! Big fan of Ninja-cutter: Puss in Boots? Be sure to challenge yourself with the entertaining and addictive minigames and find your favourite! </p>
+					<p>What are you waiting for? Whether you're playing for some mindless fun and trying to relax and pass the time, or trying to improve your skills as a master ninja, this is the game for you. Enjoy the awesomeness and believe the hype of Ninja-Cutter – chop chop! ⚔️</p>
+				</p>
+				<p>Developed by Shashwat</p>
+				<button type="button" class="menu-btn--about">Back to Menu</button>
+      
+				<!-- Back Button -->
+			</div>
+
+			<div class="menu menu--pause">
+				<h1>Paused</h1>
+				<button type="button" class="resume-btn">RESUME</button>
+				<button type="button" class="menu-btn--pause">MENU</button>
+			</div>
+			<div class="menu menu--score">
+				<h1>Not Bad, Try Hard Next Time</h1>
+				<h2>Your Score:</h2>
+				<div class="final-score-lbl"></div>
+				<div class="high-score-lbl"></div>
+				<button type="button" class="play-again-btn">PLAY AGAIN</button>
+				<button type="button" class="menu-btn--score">MENU</button>
+			</div>
+		</div>
+
+		
+		
+		<!-- partial -->
+
+		<script src="about.js"></script>
+		<script src="normalMode.js"></script>
+		<script src="playerNameStorage.js"></script>
+		<script src="config.js"></script>
+		<script src="script.js"></script>
+		<script src="getTarget.js"></script>
+		<script src="submitButton.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+</body>
+</html>
